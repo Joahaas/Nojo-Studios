@@ -1,16 +1,80 @@
 header {
-    background-color: $bg-dark;
-    color: $text-light;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  background-color: $bg-dark;
+  font-family: $font-body;   
+  color: $text-light;
+  display: flex;
+  justify-content: space-between; // instead of space-around
+  align-items: center;
+  padding: 0.625rem 2rem; // reduced to make it responsive
 }
 
 nav ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center
+  list-style: none;
+  display: flex;
+  gap: 2rem; // spacing between menu items
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: $text-light;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: lighten($bg-dark, 10%);
+  }
+}
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: $text-light;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: lighten($bg-dark, 10%);
+  }
+}
+
+/* Submenu hidden by default */
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $bg-dark;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  z-index: 1000;
+
+  li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: lighten($bg-dark, 15%);
     }
+  }
+}
+
+/* Show submenu on hover */
+.dropdown:hover .submenu {
+  display: block;
+}
