@@ -1,5 +1,9 @@
-@import 'variables',
-         'mixins',
-         'base',
-         'components',
-         'utilities';
+@charset "utf-8";
+
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/mediaqueries";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/buttons";
+@import "partials/animations";
