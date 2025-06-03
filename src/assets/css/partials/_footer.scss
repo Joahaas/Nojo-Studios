@@ -3,10 +3,16 @@ footer {
     color: $text-light;
     display: flex;
     padding: 2.5rem;
-    flex-direction: row;
+    flex-direction: column;   
     justify-content: space-between;
     align-items: flex-start;
     gap: 5.3125rem;
+
+    @media #{$medium} {
+         flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 h1{

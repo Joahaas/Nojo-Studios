@@ -3,7 +3,7 @@ header {
   font-family: $font-body;   
   color: $text-light;
   display: flex;
-  justify-content: space-between; // instead of space-around
+  justify-content: center; // instead of space-around
   align-items: center;
   padding: 0.625rem 2rem; // reduced to make it responsive
 }
@@ -14,6 +14,7 @@ nav ul {
   gap: 2rem; // spacing between menu items
   margin: 0;
   padding: 0;
+  min-width: max-content;
 }
 
 nav ul li a {
@@ -21,7 +22,7 @@ nav ul li a {
   color: $text-light;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 
   &:hover {
     background-color: lighten($bg-dark, 10%);
@@ -44,7 +45,7 @@ nav ul li a {
   color: $text-light;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background 0.3s;
+  transition: 0.3s;
 
   &:hover {
     background-color: lighten($bg-dark, 10%);
@@ -76,5 +77,5 @@ nav ul li a {
 
 /* Show submenu on hover */
 .dropdown:hover .submenu {
-  display: block;
+  display: contents;
 }

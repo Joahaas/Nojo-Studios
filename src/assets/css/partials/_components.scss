@@ -1,5 +1,5 @@
 // Base button styles
-.button {
+.primary-button {
   display: inline-block;
   padding: 0.6rem 1.4rem;
   border-radius: 30px;
@@ -9,11 +9,13 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border: 2px solid;
+  background-color: $primary-color;
+  font-family: $font-body;
 }
-
+ 
 // Green Outline Button
 .button-outline {
-  @extend .button;
+  @extend .primary-button;
   background: transparent;
   border-color: $primary-color;
   color: $primary-color;
@@ -27,7 +29,7 @@
 
 // White Filled Button
 .button-filled {
-  @extend .button;
+  @extend .primary-button;
   background-color: $bg-light;
   border-color: $text-p-dark;
   color: $text-p-dark;

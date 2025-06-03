@@ -6,6 +6,11 @@ $index-bg-middle: #0D5514;
 $bg-leonor: #DD133C;
 $bg-joao: #2B3DDF;
 
+//Gradients
+$gradient-black-to-green: linear-gradient(174deg, $bg-dark 10.68%, $index-bg-middle 38.2%, $primary-color 73.94%);
+$gradient-red: linear-gradient(184deg, $bg-leonor 5.68%, rgba(221, 19, 60, 0.00) 69.6%);
+$gradient-blue: linear-gradient(177deg, $bg-joao 4.85%, rgba(43, 61, 223, 0.00) 70.15%);
+
 // Text
 $text-light: #E8E8E7;
 $text-muted: #93978F;
@@ -24,3 +29,9 @@ $font-size-md: 2rem;
 $font-size-sm: 1.5rem;
 $font-size-xs: 1.25rem;
 $font-size-button: 1rem;
+
+// Breakpoints
+$small: "(min-width: 576px)";
+$medium: "(min-width: 768px)";
+$large: "(min-width: 1024px)";
+$xlarge: "(min-width: 1200px)";
