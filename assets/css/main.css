@@ -53,6 +53,8 @@ section {
 }
 
 .primary-button, .button-filled, .button-outline {
+  text-decoration: none;
+  color: inherit;
   display: inline-block;
   padding: 0.6rem 1.4rem;
   border-radius: 30px;
