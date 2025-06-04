@@ -52,6 +52,33 @@ section {
           align-items: center;
 }
 
+h1 {
+  font-family: "Rubik Broken Fax", sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Rubik Broken Fax", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+}
+
 .primary-button, .button-filled, .button-outline, .projects ul li button {
   text-decoration: none;
   color: inherit;
@@ -262,6 +289,7 @@ body.leonor-page {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
+  color: #E8E8E7;
 }
 .about h2 abbr {
   text-decoration: none;
@@ -305,9 +333,17 @@ body.leonor-page {
   padding: 4rem 2rem;
 }
 .skills h2 {
-  font-family: "Rubik Broken Fax", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
+}
+.skills h2 abbr {
+  text-decoration: none;
+  font-family: "Rubik Broken Fax", sans-serif;
+  font-size: 8rem;
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 .skills h3 {
   font-size: 1.2rem;
@@ -346,6 +382,13 @@ body.leonor-page {
 .projects h2 {
   font-size: 1.8rem;
   margin-bottom: 3rem;
+}
+.projects img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .projects ul {
   list-style: none;

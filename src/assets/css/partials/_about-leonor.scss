@@ -22,6 +22,7 @@ body.leonor-page{
       display: block;
       margin-top: 0.5rem;
     }
+
   }
 }
 
@@ -36,6 +37,7 @@ body.leonor-page{
     font-family: $font-body; 
     font-size: $font-size-sm;
     font-weight: 400;
+    color: $text-light;
 
     abbr {
       text-decoration: none;
@@ -79,9 +81,18 @@ body.leonor-page{
   padding: 4rem 2rem;
 
   h2 {
-    font-family: $font-heading; 
+    font-family: $font-body; 
     font-size: $font-size-sm;
     font-weight: 400;
+
+    abbr {
+      text-decoration: none;
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
   }
 
   h3 {
@@ -119,6 +130,13 @@ body.leonor-page{
   h2 {
     font-size: 1.8rem;
     margin-bottom: 3rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
   ul {
