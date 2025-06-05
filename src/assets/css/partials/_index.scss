@@ -1,3 +1,73 @@
-section{
-    background-color: $gradient-black-to-green;
+body.index-page{
+  background: $gradient-black-to-green;
+  color: $text-p-dark;
+  font-family: $font-body;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0rem 3rem;
+    color: $text-light;
+    text-align: center;
+
+    h1 {
+        color: $primary-color;
+        font-size: 7.5rem;
+        font-weight: 400;
+        margin: 0;
+
+        @media #{$medium} {
+            font-size: 12rem;
+            
+        }
+    }
+
+    h2.subtitle {
+        font-family: $font-body;
+        font-size: $font-size-xs;
+        color: #B5DEBA;
+        margin: 0;
+    }
+
+    p.tagline {
+        color: #93978F;
+        margin: 3rem 0;
+    }
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    
+    .person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+    }
+
+}
+
+img {
+   width: 100%;
+   max-width: 100vw;
+   height: auto;
+   mix-blend-mode: luminosity;
+   width: 29.43081rem;
 }

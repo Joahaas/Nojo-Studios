@@ -7,7 +7,7 @@ $bg-leonor: #DD133C;
 $bg-joao: #2B3DDF;
 
 //Gradients
-$gradient-black-to-green: linear-gradient(174deg, $bg-dark 10.68%, $index-bg-middle 38.2%, $primary-color 73.94%);
+$gradient-black-to-green: linear-gradient(174deg, $bg-dark 20.68%, $index-bg-middle 38.2%, $primary-color 73.94%);
 $gradient-red: linear-gradient(184deg, $bg-leonor 5.68%, rgba(221, 19, 60, 0.00) 69.6%);
 $gradient-blue: linear-gradient(177deg, $bg-joao 4.85%, rgba(43, 61, 223, 0.00) 70.15%);
 
@@ -22,10 +22,10 @@ $text-subtitle: #B5DEBA;
 $font-body: 'Poppins', sans-serif;
 $font-heading: 'Rubik Broken Fax', sans-serif;
 
-// Font Sizes
-$font-size-xl: 18.75rem;
-$font-size-lg: 8rem;
-$font-size-md: 2rem;
+// Font Sizes -> mudar medidas e aplicar no css, em vez de rems diferentes todas as vezes
+$font-size-xl: 7rem;
+$font-size-lg: 4rem;
+$font-size-md: 3.25rem;
 $font-size-sm: 1.5rem;
 $font-size-xs: 1.25rem;
 $font-size-button: 1rem;

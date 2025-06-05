@@ -5,19 +5,56 @@ footer {
     padding: 2.5rem;
     flex-direction: column;   
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 5.3125rem;
+    text-align: center;
 
     @media #{$medium} {
-         flex-direction: row;
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }
 }
 
-h1{
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media #{$medium} {
+        align-items: flex-start;
+        text-align: left;
+    }   
+}
+
+
+.footer-logo {
     font-family: $font-heading;
-    font-size: 2.5rem;
-    line-height: 3.125rem;
+    font-size: $font-size-lg;
     color: $text-light;
+    margin: 0;
+}
+
+.footer-subtitle {
+    font-family: $font-body;
+    font-size: $font-size-xs;
+    color: $text-light;
+    margin: 0.5rem 0 0 0;
+}
+
+.footer-note {
+    font-size: 0.75rem;
+    color: $text-light;
+    margin: 1rem 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$medium} {
+        align-items: flex-end;
+    }
+
 }

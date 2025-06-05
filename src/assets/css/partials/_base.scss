@@ -3,52 +3,35 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-
-    .index {
-        background-color: $gradient-black-to-green;
-    }
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 0rem 3rem;
-    background-color: $bg-dark;
-    color: $text-light;
-    text-align: center;
+    
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center; //pode dar erro nas ul's
+    margin: 1.5rem;
 }
-
-img {
-   
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
         font-family: $font-heading;
         font-size: 5rem;
         line-height: 1;
-        margin-bottom: 1rem;
+        font-weight: 400;
+        margin:0;
     }
 
 
 h2 {
     font-family: $font-heading;
-    font-size: 3rem;
+    font-size: $font-size-md;
+    font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 h3 {
@@ -56,7 +39,7 @@ h3 {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 p {
