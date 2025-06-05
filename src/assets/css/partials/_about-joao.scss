@@ -1,0 +1,179 @@
+body.joao-page{
+  background: linear-gradient(177deg, #2B3DDF 4.85%, rgba(43, 61, 223, 0.00) 70.15%);
+  color: $text-p-dark;
+  font-family: $font-body;
+}
+
+/* ----------------------------
+   Intro Section
+---------------------------- */
+.intro {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h1 {
+    font-family: $font-body; 
+    font-size: $font-size-sm;
+    font-weight: 400;
+
+    .highlight {
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+  }
+  .portrait-joao {
+    width: 40.4375rem;
+    height: 28.875rem;
+    flex-shrink: 0;
+    aspect-ratio: 647/462;
+  }
+}
+
+/* ----------------------------
+   About Section (MBTI)
+---------------------------- */
+.about {
+  text-align: center;
+  padding: 3rem 2rem;
+
+  h2 {
+    font-family: $font-body; 
+    font-size: $font-size-sm;
+    font-weight: 400;
+    color: $text-light;
+
+    abbr {
+      text-decoration: none;
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    color: $text-light;
+
+    li {
+      max-width: 220px;
+      font-size: $font-size-xs;
+      line-height: 1.5;
+
+      strong {
+        display: block;
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
+}
+
+/* ----------------------------
+   Skills Section
+---------------------------- */
+.skills {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h2 {
+    font-family: $font-body; 
+    font-size: $font-size-sm;
+    font-weight: 400;
+
+    abbr {
+      text-decoration: none;
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: $font-size-xs;
+    margin-top: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    li {
+      background-color: transparent;
+      font-size: $font-size-xxs;
+      &.muted {
+        color: $text-muted;
+      }
+    }
+  }
+}
+
+/* ----------------------------
+   Projects Section
+---------------------------- */
+.projects {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-family: $font-body;
+    font-size: $font-size-md;
+    margin-bottom: 3rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+
+    li {
+      background: $bg-light;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      max-width: 320px;
+
+      h3 {
+        margin-top: 1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin: 1rem 0;
+      }
+
+      button {
+        @extend .button-outline;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
