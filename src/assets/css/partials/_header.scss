@@ -3,7 +3,6 @@ header {
   box-shadow: none;
   border: none;
   font-family: $font-body;   
-  color: $text-light;
   display: flex;
   justify-content: center; // instead of space-around
   align-items: center;
@@ -22,13 +21,14 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: $text-light;
+  color: $text-muted;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: 0.3s ease;
 
   &:hover {
     background-color: lighten($bg-dark, 10%);
+    color: $text-light;
   }
 }
 .navbar {

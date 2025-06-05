@@ -4,13 +4,13 @@ body.index-page{
   font-family: $font-body;
 }
 
+
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 0rem 3rem;
     color: $text-light;
     text-align: center;
 
@@ -21,7 +21,7 @@ body.index-page{
         margin: 0;
 
         @media #{$medium} {
-            font-size: 12rem;
+            font-size: 15rem;
             
         }
     }
@@ -43,10 +43,15 @@ body.index-page{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    //padding: 2rem 1rem;
+
+    @media #{$medium} {
+        gap: 15rem;
+        
+    }
     
     .person {
         display: flex;
@@ -55,19 +60,63 @@ body.index-page{
         text-align: center;
         max-width: 300px;
         transition: transform 0.3s ease;
+        width: 34.125rem;
+        position: relative;
 
         &:hover {
             transform: scale(1.05);
         }
 
+        .name{
+            position: absolute;
+            top: 80%;
+        }
+
+        .button-primary {
+            position: absolute;
+            top: 95%;
+        }
+        
+
     }
 
+}
+
+.about-nojo {
+    h2:first-of-type {
+        color: $text-light;
+    }
+
+    h3:first-of-type {
+        color: $text-light;
+    }
 }
 
 img {
    width: 100%;
    max-width: 100vw;
    height: auto;
+   overflow: hidden;
    mix-blend-mode: luminosity;
    width: 29.43081rem;
+   position: relative;
+   margin: 10;
+}
+
+.why-us {
+    padding: 4rem 0;
+
+    .button-primary{
+        margin-top: 1.2rem;
+    }
+}
+
+.scroll-down {
+    color: $text-muted;
+    font-size: 1.2rem;
+    display: inline-flex;
+    border: 1px solid $text-muted;
+    border-radius: 999rem;
+    padding: 0.725rem 1.3rem;
+    align-items: center;
 }

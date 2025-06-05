@@ -1,11 +1,11 @@
 // Base button styles
-.primary-button {
+.button-primary {
   text-decoration: none;
   color: inherit;
   display: inline-block;
-  padding: 0.6rem 1.4rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 30px;
-  font-size: $font-size-xs;
+  font-size: $font-size-xxs;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
@@ -13,11 +13,29 @@
   border: 1.6px solid;
   background-color: $primary-color;
   font-family: $font-body;
+
+  &:hover,
+  &:active {
+    background-color: $bg-dark;
+    border-color: $bg-dark;
+    color: $text-light;
+  }
 }
- 
+
+
+.button-tertiary{
+  border-radius: 62.4375rem;
+  border: 1px solid $text-p-dark;
+  background: $bg-light;
+  font-family: $font-body;
+  font-size: $font-size-xxxs;
+  color: $text-p-dark;
+  padding: 0.6rem 1.4rem;
+} 
+
 // Green Outline Button
 .button-outline {
-  @extend .primary-button;
+  @extend .button-primary;
   background: transparent;
   border-color: $primary-color;
   color: $primary-color;
@@ -31,7 +49,7 @@
 
 // White Filled Button
 .button-filled {
-  @extend .primary-button;
+  @extend .button-primary;
   background-color: $bg-light;
   border-color: $text-p-dark;
   color: $text-p-dark;

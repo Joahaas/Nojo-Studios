@@ -40,7 +40,7 @@ h1 {
 
 h2 {
   font-family: "Rubik Broken Fax", sans-serif;
-  font-size: 3.25rem;
+  font-size: 5.5rem;
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
@@ -57,15 +57,19 @@ h3 {
 p {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
+  font-weight: 400;
+}
+p strong {
+  font-weight: 600;
 }
 
-.primary-button, .button-filled, .button-outline, .projects ul li button {
+.button-primary, .button-filled, .button-outline, .projects ul li button {
   text-decoration: none;
   color: inherit;
   display: inline-block;
-  padding: 0.6rem 1.4rem;
+  padding: 0.6rem 1.2rem;
   border-radius: 30px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
@@ -74,6 +78,21 @@ p {
   border: 1.6px solid;
   background-color: #11E32E;
   font-family: "Poppins", sans-serif;
+}
+.button-primary:hover, .button-filled:hover, .button-outline:hover, .projects ul li button:hover, .button-primary:active, .button-filled:active, .button-outline:active, .projects ul li button:active {
+  background-color: #0B1007;
+  border-color: #0B1007;
+  color: #E8E8E7;
+}
+
+.button-tertiary {
+  border-radius: 62.4375rem;
+  border: 1px solid #000000;
+  background: #E8E8E7;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  color: #000000;
+  padding: 0.6rem 1.4rem;
 }
 
 .button-outline, .projects ul li button {
@@ -103,7 +122,6 @@ header {
           box-shadow: none;
   border: none;
   font-family: "Poppins", sans-serif;
-  color: #E8E8E7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +150,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #E8E8E7;
+  color: #93978F;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   -webkit-transition: 0.3s ease;
@@ -140,6 +158,7 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: #233317;
+  color: #E8E8E7;
 }
 
 .navbar {
@@ -200,7 +219,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.5rem;
+  padding: 2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -208,11 +227,11 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 5.3125rem;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
   text-align: center;
+  gap: 3.5rem;
 }
 @media (min-width: 768px) {
   footer {
@@ -249,6 +268,32 @@ footer {
   }
 }
 
+.footer-logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .footer-logo-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer-logo {
   font-family: "Rubik Broken Fax", sans-serif;
   font-size: 4rem;
@@ -260,13 +305,15 @@ footer {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   color: #E8E8E7;
-  margin: 0.5rem 0 0 0;
+  margin: 0;
 }
 
 .footer-note {
   font-size: 0.75rem;
   color: #E8E8E7;
-  margin: 1rem 0;
+  margin: 0;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
 }
 
 .contact-form {
@@ -280,6 +327,12 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 1rem;
+}
+.contact-form .contact-message {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .contact-form {
@@ -287,6 +340,39 @@ footer {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  form {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+footer input[type=email] {
+  background-color: transparent; /* Transparent background for the input */
+  color: #000; /* Black text for readability */
+  border: 1.5px solid #E8E8E7; /* Light gray border */
+  padding: 0.5rem 0.75rem; /* Padding for spacing inside the input */
+  border-radius: 0.5rem; /* Rounded corners for a clean look */
+  width: 120%; /* Full width to fit the container */
+  max-width: -webkit-fill-available; /* Maximum width for larger screens */
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
 }
 
 body.leonor-page {
@@ -664,7 +750,6 @@ body.index-page {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  padding: 0rem 3rem;
   color: #E8E8E7;
   text-align: center;
 }
@@ -676,7 +761,7 @@ body.index-page {
 }
 @media (min-width: 768px) {
   .hero h1 {
-    font-size: 12rem;
+    font-size: 15rem;
   }
 }
 .hero h2.subtitle {
@@ -699,10 +784,14 @@ body.index-page {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+}
+@media (min-width: 768px) {
+  .people {
+    gap: 15rem;
+  }
 }
 .people .person {
   display: -webkit-box;
@@ -721,16 +810,57 @@ body.index-page {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  width: 34.125rem;
+  position: relative;
 }
 .people .person:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+.people .person .name {
+  position: absolute;
+  top: 80%;
+}
+.people .person .button-primary, .people .person .button-outline, .people .person .button-filled, .people .person .projects ul li button, .projects ul li .people .person button {
+  position: absolute;
+  top: 95%;
+}
+
+.about-nojo h2:first-of-type {
+  color: #E8E8E7;
+}
+.about-nojo h3:first-of-type {
+  color: #E8E8E7;
 }
 
 img {
   width: 100%;
   max-width: 100vw;
   height: auto;
+  overflow: hidden;
   mix-blend-mode: luminosity;
   width: 29.43081rem;
+  position: relative;
+  margin: 10;
+}
+
+.why-us {
+  padding: 4rem 0;
+}
+.why-us .button-primary, .why-us .button-outline, .why-us .button-filled, .why-us .projects ul li button, .projects ul li .why-us button {
+  margin-top: 1.2rem;
+}
+
+.scroll-down {
+  color: #93978F;
+  font-size: 1.2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #93978F;
+  border-radius: 999rem;
+  padding: 0.725rem 1.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
