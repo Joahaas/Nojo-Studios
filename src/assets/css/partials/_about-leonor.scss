@@ -24,6 +24,12 @@ body.leonor-page{
     }
 
   }
+  .portrait-leonor {
+    width: 36.625rem;
+  height: 36.625rem;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  }
 }
 
 /* ----------------------------
@@ -96,7 +102,7 @@ body.leonor-page{
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: $font-size-xs;
     margin-top: 2rem;
   }
 
@@ -112,7 +118,7 @@ body.leonor-page{
 
     li {
       background-color: transparent;
-      font-size: 1rem;
+      font-size: $font-size-xxs;
       &.muted {
         color: $text-muted;
       }
@@ -128,7 +134,8 @@ body.leonor-page{
   text-align: center;
 
   h2 {
-    font-size: 1.8rem;
+    font-family: $font-body;
+    font-size: $font-size-md;
     margin-bottom: 3rem;
   }
 
@@ -164,7 +171,7 @@ body.leonor-page{
       }
 
       button {
-        @extend .button-outline; // or .button-filled if preferred
+        @extend .button-outline;
         margin-top: 1rem;
       }
     }
