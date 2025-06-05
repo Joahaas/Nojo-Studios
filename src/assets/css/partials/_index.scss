@@ -13,6 +13,8 @@ body.index-page{
     height: 100vh;
     color: $text-light;
     text-align: center;
+    opacity: 0;
+    animation: fadeInHero 1.2s ease-out forwards;
 
     h1 {
         color: $primary-color;
@@ -36,6 +38,17 @@ body.index-page{
     p.tagline {
         color: #93978F;
         margin: 3rem 0;
+    }
+}
+
+@keyframes fadeInHero {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

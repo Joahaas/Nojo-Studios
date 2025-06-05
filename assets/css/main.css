@@ -752,6 +752,9 @@ body.index-page {
   height: 100vh;
   color: #E8E8E7;
   text-align: center;
+  opacity: 0;
+  -webkit-animation: fadeInHero 1.2s ease-out forwards;
+          animation: fadeInHero 1.2s ease-out forwards;
 }
 .hero h1 {
   color: #11E32E;
@@ -775,6 +778,31 @@ body.index-page {
   margin: 3rem 0;
 }
 
+@-webkit-keyframes fadeInHero {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInHero {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .people {
   display: -webkit-box;
   display: -ms-flexbox;
