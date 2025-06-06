@@ -1,5 +1,3 @@
-/* Cleaned and Re-indented Styles for Leonor Page */
-
 body.leonor-page {
   background: linear-gradient(184deg, #DD133C 5.68%, rgba(221, 19, 60, 0.00) 69.6%);
   color: $text-p-dark;
@@ -10,6 +8,7 @@ body.leonor-page {
 /* ----------------------------
    Intro Section
 ---------------------------- */
+
 .intro {
   text-align: center;
   margin-top: 0.2rem;
@@ -21,8 +20,7 @@ body.leonor-page {
   .portrait-leonor {
     width: 130%;
     max-width: 100vw;
-    background: url(<path-to-image>) transparent / cover no-repeat;
-    background-blend-mode: luminosity;
+    mix-blend-mode: luminosity;
 
     @media #{$medium} {
       max-width: 600px;
