@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Broken+Fax&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -26,10 +30,36 @@ section {
   margin: 1.5rem;
 }
 
-html {
-  scroll-behavior: smooth;
+.intro {
+  -webkit-animation: fadeInintro 1.2s ease-out forwards;
+          animation: fadeInintro 1.2s ease-out forwards;
 }
 
+@-webkit-keyframes fadeInintro {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInintro {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+            transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
