@@ -438,6 +438,7 @@ body.leonor-page {
 .intro .portrait-leonor {
   width: 130%;
   max-width: 100vw;
+  margin-top: -1rem;
   mix-blend-mode: luminosity;
 }
 @media (min-width: 768px) {
