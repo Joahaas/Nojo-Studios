@@ -1,7 +1,13 @@
-body.leonor-page{
+/* Cleaned and Re-indented Styles for Leonor Page */
+
+body.leonor-page {
   background: linear-gradient(184deg, #DD133C 5.68%, rgba(221, 19, 60, 0.00) 69.6%);
   color: $text-p-dark;
   font-family: $font-body;
+}
+
+nav ul li a {
+  color: $text-light;
 }
 
 /* ----------------------------
@@ -9,12 +15,14 @@ body.leonor-page{
 ---------------------------- */
 .intro {
   text-align: center;
-  padding: 4rem 2rem;
+  margin-top: 3rem;
+
 
   h1 {
-    font-family: $font-body; 
+    font-family: $font-body;
     font-size: $font-size-sm;
     font-weight: 400;
+    color: $text-light;
 
     .highlight {
       font-family: $font-heading;
@@ -22,13 +30,11 @@ body.leonor-page{
       display: block;
       margin-top: 0.5rem;
     }
-
   }
+
   .portrait-leonor {
-    width: 36.625rem;
-  height: 36.625rem;
-  flex-shrink: 0;
-  aspect-ratio: 1/1;
+    width: 130%;
+    max-width: 36.625rem;
   }
 }
 
@@ -37,10 +43,10 @@ body.leonor-page{
 ---------------------------- */
 .about {
   text-align: center;
-  padding: 3rem 2rem;
+
 
   h2 {
-    font-family: $font-body; 
+    font-family: $font-body;
     font-size: $font-size-sm;
     font-weight: 400;
     color: $text-light;
@@ -50,8 +56,7 @@ body.leonor-page{
       font-family: $font-heading;
       font-size: $font-size-lg;
       display: block;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
+      margin: 0.5rem 0 2rem 0;
     }
   }
 
@@ -69,10 +74,10 @@ body.leonor-page{
     li {
       max-width: 220px;
       font-size: $font-size-xs;
-      line-height: 1.5;
 
       strong {
         display: block;
+        font-weight: 500;
         margin-bottom: 0.4rem;
       }
     }
@@ -82,46 +87,49 @@ body.leonor-page{
 /* ----------------------------
    Skills Section
 ---------------------------- */
-.skills {
+.skills-lists {
   text-align: center;
-  padding: 4rem 2rem;
 
-  h2 {
-    font-family: $font-body; 
-    font-size: $font-size-sm;
-    font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 
-    abbr {
-      text-decoration: none;
-      font-family: $font-heading;
-      font-size: $font-size-lg;
-      display: block;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  h3 {
-    font-size: $font-size-xs;
-    margin-top: 2rem;
+  @media #{$medium} {
+    flex-direction: row;
+    gap: 18rem;
   }
 
   ul {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+  }
 
-    li {
-      background-color: transparent;
-      font-size: $font-size-xxs;
-      &.muted {
-        color: $text-muted;
-      }
+  .category {
+    font-weight: 600;
+    color: $text-p-dark;
+    opacity: 0.35;
+  }
+
+  .soft-skills,
+  .hard-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media #{$medium} {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  .hard-skills {
+    @media #{$medium} {
+      align-items: flex-end;
     }
   }
 }
@@ -130,50 +138,45 @@ body.leonor-page{
    Projects Section
 ---------------------------- */
 .projects {
-  padding: 4rem 2rem;
   text-align: center;
+  flex-wrap: wrap;
 
-  h2 {
-    font-family: $font-body;
-    font-size: $font-size-md;
-    margin-bottom: 3rem;
-  }
+
 
   img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    mix-blend-mode: normal;
   }
 
   ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
     padding: 0;
 
+    @media #{$medium} {
+      gap: 20rem;
+      flex-direction: row;
+    }
+
     li {
-      background: $bg-light;
       padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
       max-width: 320px;
 
       h3 {
-        margin-top: 1rem;
+        margin: 1rem;
       }
 
       p {
         font-size: 0.95rem;
         margin: 1rem 0;
       }
-
-      button {
-        @extend .button-outline;
-        margin-top: 1rem;
-      }
     }
   }
+}
+nav ul li a {
+  color: $text-light;
 }

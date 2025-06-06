@@ -92,7 +92,7 @@ form {
 
 footer input[type="email"] {
   background-color: transparent; /* Transparent background for the input */
-  color: #000; /* Black text for readability */
+  color: $text-light; /* Black text for readability */
   border: 1.5px solid $text-light; /* Light gray border */
   padding: 0.5rem 0.75rem; /* Padding for spacing inside the input */
   border-radius: 0.5rem; /* Rounded corners for a clean look */

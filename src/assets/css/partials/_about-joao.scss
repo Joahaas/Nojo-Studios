@@ -155,10 +155,9 @@ body.joao-page{
     padding: 0;
 
     li {
-      background: $bg-light;
       padding: 1rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
       max-width: 320px;
 
       h3 {
@@ -170,10 +169,7 @@ body.joao-page{
         margin: 1rem 0;
       }
 
-      button {
-        @extend .button-outline;
-        margin-top: 1rem;
-      }
+
     }
   }
 }

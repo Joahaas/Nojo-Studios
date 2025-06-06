@@ -3,7 +3,7 @@ body.index-page{
   color: $text-p-dark;
   font-family: $font-body;
 }
-
+  
 
 .hero {
     display: flex;
@@ -55,17 +55,19 @@ body.index-page{
 .people {
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: center;
-    gap: 5rem;
+    gap: 8rem;
     max-width: 1200px;
     margin: 0 auto;
     //padding: 2rem 1rem;
 
     @media #{$medium} {
-        gap: 15rem;
+        gap: 10rem;
+        flex-direction: row;
         
     }
-    
+
     .person {
         display: flex;
         flex-direction: column;
@@ -82,17 +84,43 @@ body.index-page{
 
         .name{
             position: absolute;
-            top: 80%;
+            top: 85%;
         }
 
         .button-primary {
             position: absolute;
-            top: 95%;
+            top: 100%;
         }
         
 
     }
 
+}
+
+.image-container {
+  width: 100%;
+  height: 24rem; /* Adjust to your desired height */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image */
+      
+}
+
+.leonor-image {
+  width: 110%;
+  height: 110%;
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+  mix-blend-mode: luminosity;
+}
+
+.joao-image {
+  width: 75%;
+  height: 80%;
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+  mix-blend-mode: luminosity;
+  margin-bottom: 2rem;
 }
 
 .about-nojo {
@@ -113,11 +141,11 @@ img {
    mix-blend-mode: luminosity;
    width: 29.43081rem;
    position: relative;
-   margin: 10;
+
 }
 
 .why-us {
-    padding: 4rem 0;
+    padding: 9rem 0 4rem;
 
     .button-primary{
         margin-top: 1.2rem;

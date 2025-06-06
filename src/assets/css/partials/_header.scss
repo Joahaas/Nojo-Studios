@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content: center; // instead of space-around
   align-items: center;
-  padding: 0.625rem 2rem; // reduced to make it responsive
+  padding: 1rem 2rem; // reduced to make it responsive
   z-index: 900;
 }
 
@@ -56,29 +56,42 @@ nav ul li a {
 }
 
 /* Submenu hidden by default */
-.dropdown .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: $bg-dark;
-  list-style: none;
-  padding: 0.5rem 0;
-  border-radius: 4px;
-  z-index: 1000;
+.dropdown {
+  position: relative; // Ensure stacking context for submenu
 
-  li a {
-    display: block;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $bg-dark;
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    z-index: 2000; // Higher than header/nav
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 
-    &:hover {
-      background-color: lighten($bg-dark, 15%);
+    li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: lighten($bg-dark, 15%);
+      }
     }
   }
-}
 
-/* Show submenu on hover */
-.dropdown:hover .submenu {
-  display: contents;
+  /* Show submenu on hover */
+  &:hover .submenu {
+    display: block;
+  }
+
+  // Make the "about" tab (the dropdown trigger) match submenu color when active
+  &:hover > a,
+  &.active > a {
+    background-color: lighten($bg-dark, 0%);
+    color: $text-light;
+  }
 }
