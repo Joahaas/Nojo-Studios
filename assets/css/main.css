@@ -441,7 +441,8 @@ body.leonor-page {
 .intro .portrait-leonor {
   width: 130%;
   max-width: 100vw;
-  mix-blend-mode: luminosity;
+  background: url(<path-to-image>) transparent/cover no-repeat;
+  background-blend-mode: luminosity;
 }
 @media (min-width: 768px) {
   .intro .portrait-leonor {
