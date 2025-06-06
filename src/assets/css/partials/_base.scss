@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -13,8 +17,20 @@ section {
     text-align: center; //pode dar erro nas ul's
     margin: 1.5rem;
 }
-html {
-    scroll-behavior: smooth;
+
+.intro {
+    animation: fadeInintro 1.2s ease-out forwards;
+
+  }
+  @keyframes fadeInintro {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h1 {
