@@ -9,28 +9,15 @@ body.joao-page{
 ---------------------------- */
 .intro {
   text-align: center;
-  padding: 4rem 2rem;
-
-  h1 {
-    font-family: $font-body; 
-    font-size: $font-size-sm;
-    font-weight: 400;
-
-    .highlight {
-      font-family: $font-heading;
-      font-size: $font-size-lg;
-      display: block;
-      margin-top: 0.5rem;
-    }
+  margin-top: 4rem;
 
   }
   .portrait-joao {
-    width: 40.4375rem;
-    height: 28.875rem;
-    flex-shrink: 0;
-    aspect-ratio: 647/462;
+    width: 130%;
+    max-width: 36.625rem;
+    margin-top: 1rem;
   }
-}
+
 
 /* ----------------------------
    About Section (MBTI)
@@ -38,46 +25,8 @@ body.joao-page{
 .about {
   text-align: center;
   padding: 3rem 2rem;
-
-  h2 {
-    font-family: $font-body; 
-    font-size: $font-size-sm;
-    font-weight: 400;
-    color: $text-light;
-
-    abbr {
-      text-decoration: none;
-      font-family: $font-heading;
-      font-size: $font-size-lg;
-      display: block;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    color: $text-light;
-
-    li {
-      max-width: 220px;
-      font-size: $font-size-xs;
-      line-height: 1.5;
-
-      strong {
-        display: block;
-        margin-bottom: 0.4rem;
-      }
-    }
-  }
-}
+  color: $text-p-dark;
+} 
 
 /* ----------------------------
    Skills Section
@@ -85,26 +34,6 @@ body.joao-page{
 .skills {
   text-align: center;
   padding: 4rem 2rem;
-
-  h2 {
-    font-family: $font-body; 
-    font-size: $font-size-sm;
-    font-weight: 400;
-
-    abbr {
-      text-decoration: none;
-      font-family: $font-heading;
-      font-size: $font-size-lg;
-      display: block;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
-    }
-  }
-
-  h3 {
-    font-size: $font-size-xs;
-    margin-top: 2rem;
-  }
 
   ul {
     list-style: none;
@@ -133,11 +62,11 @@ body.joao-page{
   padding: 4rem 2rem;
   text-align: center;
 
-  h2 {
+  /* h2 {
     font-family: $font-body;
     font-size: $font-size-md;
     margin-bottom: 3rem;
-  }
+  } */
 
   img {
     width: 100%;

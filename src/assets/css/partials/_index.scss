@@ -18,6 +18,7 @@ body.index-page{
 
     h1 {
         color: $primary-color;
+        font-family: $font-heading;
         font-size: 7.5rem;
         font-weight: 400;
         margin: 0;
@@ -60,7 +61,6 @@ body.index-page{
     gap: 8rem;
     max-width: 1200px;
     margin: 0 auto;
-    //padding: 2rem 1rem;
 
     @media #{$medium} {
         gap: 10rem;
@@ -128,9 +128,6 @@ body.index-page{
         color: $text-light;
     }
 
-    h3:first-of-type {
-        color: $text-light;
-    }
 }
 
 img {

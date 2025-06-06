@@ -7,7 +7,7 @@ header {
   justify-content: center; // instead of space-around
   align-items: center;
   padding: 1rem 2rem; // reduced to make it responsive
-  z-index: 900;
+  z-index: 900;// smaller font size for better responsiveness
 }
 
 nav ul {
@@ -25,9 +25,15 @@ nav ul li a {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: 0.3s ease;
+  font-size: $font-size-xxxs;
+
+  @media #{$medium} {
+    font-size: $font-size-xxs; // slightly larger font on medium screens
+    
+  }
 
   &:hover {
-    background-color: lighten($bg-dark, 10%);
+    background-color: lighten($bg-dark, 0%);
     color: $text-light;
   }
 }

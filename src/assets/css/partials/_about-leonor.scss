@@ -6,30 +6,15 @@ body.leonor-page {
   font-family: $font-body;
 }
 
-nav ul li a {
-  color: $text-light;
-}
-
 /* ----------------------------
    Intro Section
 ---------------------------- */
 .intro {
   text-align: center;
-  margin-top: 3rem;
-
+  margin-top: 0.2rem;
 
   h1 {
-    font-family: $font-body;
-    font-size: $font-size-sm;
-    font-weight: 400;
     color: $text-light;
-
-    .highlight {
-      font-family: $font-heading;
-      font-size: $font-size-lg;
-      display: block;
-      margin-top: 0.5rem;
-    }
   }
 
   .portrait-leonor {
@@ -43,42 +28,30 @@ nav ul li a {
 ---------------------------- */
 .about {
   text-align: center;
-
-
-  h2 {
-    font-family: $font-body;
-    font-size: $font-size-sm;
-    font-weight: 400;
-    color: $text-light;
-
-    abbr {
-      text-decoration: none;
-      font-family: $font-heading;
-      font-size: $font-size-lg;
-      display: block;
-      margin: 0.5rem 0 2rem 0;
-    }
-  }
-
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  
   ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 6rem;
+    justify-content: space-around;
+    gap: 6rem 0 0 0;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
-    color: $text-light;
+    color: $text-p-dark;
 
     li {
       max-width: 220px;
-      font-size: $font-size-xs;
+      font-size: $font-size-xxs;
 
       strong {
         display: block;
         font-weight: 500;
         margin-bottom: 0.4rem;
+        font-size: $font-size-xs;
       }
     }
   }
@@ -87,16 +60,21 @@ nav ul li a {
 /* ----------------------------
    Skills Section
 ---------------------------- */
-.skills-lists {
-  text-align: center;
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
 
+  .skills-lists {
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 6rem;
 
   @media #{$medium} {
     flex-direction: row;
-    gap: 18rem;
+    gap: 22rem;
   }
 
   ul {
@@ -133,6 +111,7 @@ nav ul li a {
     }
   }
 }
+}
 
 /* ----------------------------
    Projects Section
@@ -140,8 +119,11 @@ nav ul li a {
 .projects {
   text-align: center;
   flex-wrap: wrap;
+  gap: 2rem;
 
-
+  .card-name {
+    font-size: $font-size-xs;
+  }
 
   img {
     width: 100%;
@@ -153,8 +135,8 @@ nav ul li a {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
     padding: 0;
 
     @media #{$medium} {
@@ -165,6 +147,11 @@ nav ul li a {
     li {
       padding: 1rem;
       max-width: 320px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+            transform: scale(1.05);
+        }
 
       h3 {
         margin: 1rem;
