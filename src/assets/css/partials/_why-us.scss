@@ -17,15 +17,17 @@ body.why-us-page {
     overflow: hidden;
 
     .portrait-leonor {
-      width: 130%;
-      height: 130%;
+      width: 100%;
+      max-width: 800px;
+      height: auto;
       object-fit: cover; /* Ensures the image covers the container without distorting */
       mix-blend-mode: luminosity;
     }
 
     .portrait-joao {
-      width: 140%;
-      height: 140%;
+     width: 100%;
+      max-width: 800px;
+      height: auto;
       object-fit: cover; /* Ensures the image covers the container without distorting */
       mix-blend-mode: luminosity;
     }
@@ -33,10 +35,22 @@ body.why-us-page {
 }
 
 //about us section
-.description {
+.about-creators {
+
+  .description {
   width: 70%;
 }
 
+img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the container without distorting */
+  mix-blend-mode: luminosity;
+
+}
+
+}
 
 //Why trust us section
 /* h2 {
@@ -52,25 +66,40 @@ body.why-us-page {
     }
  } */
 
+  .trust-nojo {
+  padding: 4rem 2rem;
+  text-align: center;
+
   ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); // Always 2 columns
+    grid-template-rows: repeat(2, auto);   // 2 rows
+    gap: 2rem 3rem;
+    max-width: 900px;
+    margin: 2rem auto 0;
     padding: 0;
-    color: $text-p-dark;
+    list-style: none;
 
     li {
-      max-width: 220px;
       font-size: $font-size-xs;
+      color: $text-p-dark;
 
       strong {
         display: block;
         font-weight: 600;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.5rem;
       }
     }
   }
+  @media ($medium) {
+    ul {
+      grid-template-columns: repeat(2, 1fr); // 2 columns on medium screens
+    }
+  }
+  @media ($large) {
+    ul {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+}
