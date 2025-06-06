@@ -33,6 +33,7 @@ section {
 .intro {
   -webkit-animation: fadeInintro 0.8s ease-out forwards;
           animation: fadeInintro 0.8s ease-out forwards;
+  mix-blend-mode: luminosity;
 }
 
 @-webkit-keyframes fadeInintro {

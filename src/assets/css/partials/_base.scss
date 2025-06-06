@@ -20,7 +20,7 @@ section {
 
 .intro {
     animation: fadeInintro 0.8s ease-out forwards;
-
+    mix-blend-mode: luminosity;
   }
   @keyframes fadeInintro {
     from {
