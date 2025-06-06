@@ -953,7 +953,81 @@ img {
 }
 
 body.why-us-page {
-  background: linear-gradient(177deg, #0B1007 4.85%, rgba(11, 16, 7, 0) 70.15%);
+  background: linear-gradient(177deg, #0B1007 25%, rgba(11, 16, 7, 0) 70.15%);
   color: #000000;
   font-family: "Poppins", sans-serif;
+}
+
+.nojo-founders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nojo-founders .founder {
+  width: 100%;
+  height: 100%; /* Adjust to your desired height */
+  overflow: hidden;
+}
+.nojo-founders .founder .portrait-leonor {
+  width: 130%;
+  height: 130%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures the image covers the container without distorting */
+  mix-blend-mode: luminosity;
+}
+.nojo-founders .founder .portrait-joao {
+  width: 140%;
+  height: 140%;
+  -o-object-fit: cover;
+     object-fit: cover; /* Ensures the image covers the container without distorting */
+  mix-blend-mode: luminosity;
+}
+
+.description {
+  width: 70%;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #080C05;
+}
+h2 .highlight {
+  font-family: "Rubik Broken Fax", sans-serif;
+  font-size: 4rem;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  color: #000000;
+}
+ul li {
+  max-width: 220px;
+  font-size: 1.25rem;
+}
+ul li strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
 }

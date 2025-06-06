@@ -3,3 +3,74 @@ body.why-us-page {
   color: $text-p-dark;
   font-family: $font-body;
 }
+
+//intro section
+
+.nojo-founders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .founder {
+    width: 100%;
+    height: 100%; /* Adjust to your desired height */
+    overflow: hidden;
+
+    .portrait-leonor {
+      width: 130%;
+      height: 130%;
+      object-fit: cover; /* Ensures the image covers the container without distorting */
+      mix-blend-mode: luminosity;
+    }
+
+    .portrait-joao {
+      width: 140%;
+      height: 140%;
+      object-fit: cover; /* Ensures the image covers the container without distorting */
+      mix-blend-mode: luminosity;
+    }
+  }
+}
+
+//about us section
+.description {
+  width: 70%;
+}
+
+
+//Why trust us section
+h2 {
+    font-family: $font-body;
+    font-size: $font-size-xs;
+    font-weight: 400;
+    color: $text-h-dark;
+
+    .highlight {
+      font-family: $font-heading;
+      font-size: $font-size-lg;
+      display: block;
+    }
+ }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    color: $text-p-dark;
+
+    li {
+      max-width: 220px;
+      font-size: $font-size-xs;
+
+      strong {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
