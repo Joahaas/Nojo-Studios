@@ -103,26 +103,26 @@ body.index-page{
 
 .image-container {
   width: 100%;
-  height: 24rem; /* Adjust to your desired height */
+  height: 24rem;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the image */
+  align-items: center; 
       
 }
 
 .leonor-image {
   width: 110%;
   height: 110%;
-  object-fit: cover; /* Ensures the image covers the container without distorting */
+  object-fit: cover; 
   mix-blend-mode: luminosity;
 }
 
 .joao-image {
   width: 75%;
   height: 80%;
-  object-fit: cover; /* Ensures the image covers the container without distorting */
+  object-fit: cover; 
   mix-blend-mode: luminosity;
   margin-bottom: 2rem;
 }
@@ -132,21 +132,11 @@ body.index-page{
     h2 {
         color: $text-light;
         padding-bottom: 3rem;
+        
         .highlight {
             margin: -1.5rem 0 0;
         }
     }
-
-}
-
-img {
-   width: 100%;
-   max-width: 100vw;
-   height: auto;
-   overflow: hidden;
-   mix-blend-mode: luminosity;
-   width: 29.43081rem;
-   position: relative;
 
 }
 

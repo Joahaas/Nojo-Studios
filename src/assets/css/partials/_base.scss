@@ -14,12 +14,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; //pode dar erro nas ul's
+    text-align: center;
     margin: 1.5rem;
 }
 
 .intro {
-    animation: fadeInintro 1.2s ease-out forwards;
+    animation: fadeInintro 0.8s ease-out forwards;
 
   }
   @keyframes fadeInintro {
