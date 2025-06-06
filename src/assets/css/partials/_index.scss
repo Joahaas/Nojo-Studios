@@ -68,6 +68,10 @@ body.index-page{
         
     }
 
+    .highlight {
+        margin: -1.5rem 0 0;
+    }
+
     .person {
         display: flex;
         flex-direction: column;
@@ -124,8 +128,13 @@ body.index-page{
 }
 
 .about-nojo {
-    h2:first-of-type {
+
+    h2 {
         color: $text-light;
+        padding-bottom: 3rem;
+        .highlight {
+            margin: -1.5rem 0 0;
+        }
     }
 
 }
@@ -142,7 +151,7 @@ img {
 }
 
 .why-us {
-    padding: 9rem 0 4rem;
+    padding: 10rem 0 5rem;
 
     .button-primary{
         margin-top: 1.2rem;
